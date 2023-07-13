@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/slim-select@latest/dist/slimselect.css"
+    />
+    <link rel="stylesheet" href="dist/notiflix-3.2.6.min.css" />
+    <style>
+      img {
+        max-width: 40%;
+        height: auto;
+        margin-top: 15px;
+      }
+
+      .text-info {
+        margin-left: 100px;
+        width: 350px;
+      }
+
+      .cat-info {
+        display: flex;
+      }
+
+      .loader {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #fff;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+    </style>
+    <title>Homework 10</title>
+  </head>
+  <body>
+    <select class="breed-select"></select>
+    <p class="loader">Loading data, please wait...</p>
+    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
+    <div class="cat-info"></div>
+    <script src="index.js" type="module"></script>
+    <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+    <script src="dist/notiflix-3.2.6.min.js"></script>
+  </body>
+</html>
